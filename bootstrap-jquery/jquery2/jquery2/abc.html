@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My second HTML page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="jquery-3.5.1.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function() {
+            //console.log('Ready for jQuery 123');
+            $('#p-2').html('Changed with jQuery');
+            $('#p-2').css('color','red');
+            $('#p-2').html('Changed with jQuery');
+
+            // Chain of changes
+            $('#p-2').html('Changed with jQuery')
+                    .css('color','yellow')
+                    
+            let p2 = $('#p-2');
+            p2.html('Changed with jQuery')
+                    .css('color','green');		
+
+            $('h1')
+
+            $('p')
+
+            $('p').length
+
+            $('p').css('color','green');
+
+            $('h1').css('color','red');
+
+            $('div')
+
+            $('div').length
+
+            $( ".container" ).css( "border", "2px solid red" );
+
+            $('p').addClass("m-4")
+
+            $('p').removeClass("m-4")
+
+            $('.col-sm-4').css( "border", "2px solid green" );
+
+            $('.col-sm-4').parents()
+
+            $('.col-sm-4').children()
+
+            $('tbody').children()
+
+            $('tbody').children().css('color','green');
+
+            $('#p-3').hide()
+
+            $('#p-3').show()
+
+            $('#p-3').toggle()
+
+            $('#p-3').toggle()
+
+            $('button')
+
+            $('button').click(function() {
+            $('h1').toggle();
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/abc.html">Home</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+    <div class="container" >
+        <div class="row">
+        <div class="col-sm-4 col-md-8">
+            <p class="m-3">This is a sample paragraph</p>
+            <h1 >heading 1</h1>
+            <p id="p-1">
+            This is paragrapah 1
+            </p>     
+            <p id="p-2">
+                This is paragrapah 2
+                </p>   
+                <p id="p-3">
+                    This is paragrapah 3
+                    </p>   
+                    <button class="btn btn-info m-2" onclick="changeMe()">Try JavaScript</button>
+    
+            <p >This is a new paragraph</p>
+
+        </div>
+
+
+        <div class="col-sm-8 col-md-4">
+            <h2>This is an image</h2>
+    
+            <img src="desktop.png" class="rounded m-3 img-fluid" alt= "desktop sample impage" >
+
+        </div>
+    </div>
+
+<div class="row"> 
+
+        <div class="col">
+            
+    <table class="table table-dark" >
+        <thead class="thead-light">
+        <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Course</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Paul</td>
+        <td>London</td>
+        <td>Hadoop</td>
+        </tr>
+        <tr>
+        <td>Mike</td>
+        <td>New York</td>
+        <td>Microservices</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+</div>
+</div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/abc.html">Home</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+<script src="site.js" type="text/javascript"></script>
+    
+</html>
+
+<!--
+
+Extra Small (col-)    < 576 px
+Small(col-sm-)        >= 576 px
+Medium(col-md-)  	  >= 768 px
+Large(col-lg-)        >= 992 px
+Extra Large(col-xl)   >= 1200 px
+-->
